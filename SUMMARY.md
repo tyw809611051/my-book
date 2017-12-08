@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [machine learing](machine-learing.md)
-  * [install](machine-learing/install.md)
-* search\_engine
+* [机器学习](machine-learing.md)
+  * [安装](machine-learing/install.md)
+* 搜索引擎
 
