@@ -16,3 +16,9 @@
 - 其次React是单向的从数据到视图的渲染，非双向数据绑定
 - 不直接操作DOM对象，而是通过虚拟DOM通过diff算法以最小的步骤作用到真实的DOM上。
 - 不便于直接操作DOM，大多数时间只是对 virtual DOM 进行编程
+
+
+#### 4. 学习网址
+1. 原版：https://reactjs.org
+   中文版：https://doc.react-china.org
+2. https://hulufei.gitbooks.io/react-tutorial/content/

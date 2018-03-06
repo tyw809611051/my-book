@@ -20,4 +20,5 @@
   * Python
   * [ReactJS](reactjs.md)
     * [简介](reactjs/jian-jie.md)
+    * [安装](reactjs/an-zhuang.md)
 
