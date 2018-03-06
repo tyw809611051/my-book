@@ -7,6 +7,7 @@
   * PHP
     * [基本语法](basicgrammar.md)
     * [数组](phpjie-shao.md)
+    * [函数](han-shu.md)
   * HTML
   * [CSS](css.md)
   * JAVASCRIPT
