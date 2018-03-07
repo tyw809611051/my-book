@@ -14,6 +14,13 @@
     * [预定义变量/常量](yu-ding-yi-bian-91cf-chang-liang.md)
     * [面向对象概念](mian-xiang-dui-xiang-gai-nian.md)
     * [提高性能](ti-gao-xing-neng.md)
+    * [文件递归的使用](wen-jian-di-gui-de-shi-yong.md)
+    * [文件上传与下载](wen-jian-shang-chuan-yu-xia-zai.md)
+    * [常用函数](chang-yong-han-shu.md)
+    * [绘图](hui-tu.md)
+    * [session 和cookie的区别](session-he-cookie-de-qu-bie.md)
+    * [错误处理](cuo-wu-chu-li.md)
+    * [Smarty](smarty.md)
   * HTML
   * [CSS](css.md)
   * JAVASCRIPT
