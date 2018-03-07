@@ -1,6 +1,6 @@
 smarty缓存技术
 
-开启缓存步骤：1
+开启缓存步骤：
 
 ```
 1.开启缓存：$smarty -&gt;caching = true;
