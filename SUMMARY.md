@@ -28,6 +28,7 @@
     * [页面静态化](ye-mian-jing-tai-hua.md)
     * [短信验证码](duan-xin-yan-zheng-ma.md)
     * [curl请求封装](curlqing-qiu-feng-zhuang.md)
+    * [校验用户名、密码、邮箱、手机号规则](xiao-yan-yong-hu-ming-3001-mi-ma-3001-you-xiang-3001-shou-ji-hao-gui-ze.md)
   * Python
   * [ReactJS](reactjs.md)
     * [简介](reactjs/jian-jie.md)
