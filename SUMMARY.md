@@ -4,6 +4,9 @@
 * [机器学习](machine-learing.md)
   * [安装](machine-learing/install.md)
 * [Language](language.md)
+  * HTML
+  * [CSS](css.md)
+  * JAVASCRIPT
   * [PHP](php.md)
     * [基本语法](basicgrammar.md)
     * [数组](phpjie-shao.md)
@@ -21,9 +24,7 @@
     * [session 和cookie的区别](session-he-cookie-de-qu-bie.md)
     * [错误处理](cuo-wu-chu-li.md)
     * [Smarty](smarty.md)
-  * HTML
-  * [CSS](css.md)
-  * JAVASCRIPT
+    * [发送邮件](fa-song-you-jian.md)
   * Python
   * [ReactJS](reactjs.md)
     * [简介](reactjs/jian-jie.md)
