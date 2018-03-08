@@ -25,17 +25,13 @@ smarty缓存技术
 4.函数的参数，必须在
 ```
 
-&lt;
-
-{insert}
-
-&gt;
+&lt;{insert}&gt;
 
 标签中传递
 
-![](index_files/39952355.png)
+![](img/Language/PHP/smarty/39952355.png)
 
-![](index_files/39986581.png)
+![](img/Language/PHP/smarty/39986581.png)
 
 单模板多缓存技术（一个html模板产生多个缓存文件）：
 
@@ -43,17 +39,17 @@ smarty缓存技术
 实现：需啊在display的时候，增加第二个参数，
 ```
 
-![](index_files/40134174.png)
+![](img/Language/PHP/smarty/40134174.png)
 
 ```
  首先判断有无缓存文件，没有再去数据库取
 ```
 
-![](index_files/40284496.png)
+![](img/Language/PHP/smarty/40284496.png)
 
 删除缓存文件：
 
-![](index_files/3e1c6710-b910-4771-8bc1-0733ee7d72e2.png)
+![](img/Language/PHP/smarty/3e1c6710-b910-4771-8bc1-0733ee7d72e2.png)
 
 在html模板中使用smarty的保留变量
 
@@ -73,13 +69,13 @@ smarty缓存技术
 
 举例说明：
 
-![](index_files/0.4311708069872111.png)
+![](img/Language/PHP/smarty/0.4311708069872111.png)
 
-![](index_files/0.1434014937840402.png)
+![](img/Language/PHP/smarty/0.1434014937840402.png)
 
 自定义模板引擎类：
 
-![](index_files/0.38336676941253245.png)
+![](img/Language/PHP/smarty/0.38336676941253245.png)
 
-![](index_files/clip_image0021d362583-343a-492c-872c-bc490740c9db.jpg)
+![](img/Language/PHP/smarty/clip_image0021d362583-343a-492c-872c-bc490740c9db.jpg)
 
