@@ -25,6 +25,7 @@
     * [错误处理](cuo-wu-chu-li.md)
     * [Smarty](smarty.md)
     * [发送邮件](fa-song-you-jian.md)
+    * [页面静态化](ye-mian-jing-tai-hua.md)
   * Python
   * [ReactJS](reactjs.md)
     * [简介](reactjs/jian-jie.md)
