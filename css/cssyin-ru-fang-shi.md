@@ -2,38 +2,19 @@
 
 说明：把CSS样式表当成HTML一个标签来使用，把样式表写到
 
-&lt;
+&lt;head&gt;
 
-head
-
-&gt;
-
-&lt;
-
-/head
-
-&gt;
+&lt;/head&gt;
 
 标签中
 
 语法：
 
-&lt;
+&lt;style type="text/css"&gt;
 
-style type="text/css"
-
-&gt;
-
-&lt;
-
-/style
-
-&gt;
+&lt;/style&gt;
 
 注意：内嵌方式只能在当前（有CSS样式）页面使用
-
-  
-
 
 **2.外联方式**
 
@@ -41,27 +22,15 @@ style type="text/css"
 
 语法：
 
-&lt;
-
-link rel="stylesheet" type="text/css" href="引入文件的路径"
-
-&gt;
+&lt;link rel="stylesheet" type="text/css" href="引入文件的路径"&gt;
 
 注意：在CSS文件中不用写
 
-&lt;
+&lt;style type="text/css"&gt;
 
-style type="text/css"
-
-&gt;
-
-        一个css文件可以给多个html文件使用
-
-  
-
-
-  
-
+```
+    一个css文件可以给多个html文件使用
+```
 
 **3.行内方式**
 
@@ -69,14 +38,7 @@ style type="text/css"
 
 语法：
 
-&lt;
-
-div style="border:1px;"
-
-&gt;
-
-  
-
+&lt;div style="border:1px;"&gt;
 
 4.@import
 
