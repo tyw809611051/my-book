@@ -1,4 +1,10 @@
-`<`
+```
+<style type="text/css">
+   body {
+    background-color:#333;
+}
+</style>
+```
 
   
 
@@ -10,7 +16,7 @@
 
 常用属性：
 
-![](index_files/25982468.png)
+![](/img/Language/CSS/property/25982468.png)
 
-![](index_files/34518843.png)
+![](/img/Language/CSS/property/34518843.png)
 
