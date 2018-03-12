@@ -52,7 +52,9 @@
     * [curl请求封装](curlqing-qiu-feng-zhuang.md)
     * [校验用户名、密码、邮箱、手机号规则](xiao-yan-yong-hu-ming-3001-mi-ma-3001-you-xiang-3001-shou-ji-hao-gui-ze.md)
     * [伪静态](wei-jing-tai.md)
-  * Python
+  * [Python](python.md)
+    * [语法](python/yu-fa.md)
+    * 基本数据类型
   * [ReactJS](reactjs.md)
     * [简介](reactjs/jian-jie.md)
     * [安装](reactjs/an-zhuang.md)
