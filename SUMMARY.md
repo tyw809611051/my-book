@@ -56,7 +56,7 @@
   * [ReactJS](reactjs.md)
     * [简介](reactjs/jian-jie.md)
     * [安装](reactjs/an-zhuang.md)
-    * JSX
+    * [JSX](reactjs/jsx.md)
   * [MySQL](mysql.md)
     * [MySQL简介](mysql/mysqljian-jie.md)
     * [数据类型](mysql/shu-ju-lei-xing.md)
