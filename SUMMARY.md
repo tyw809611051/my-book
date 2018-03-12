@@ -59,7 +59,11 @@
     * JSX
   * [MySQL](mysql.md)
     * [MySQL简介](mysql/mysqljian-jie.md)
+    * [数据类型](mysql/shu-ju-lei-xing.md)
     * [创建库](mysql/chuang-jian-ku.md)
     * [字段类型](mysql/zi-duan-lei-xing.md)
     * [修改表](mysql/xiu-gai-biao.md)
+    * [数据操作](mysql/shu-ju-cao-zuo.md)
+    * [数据库相关操作](mysql/shu-ju-ku-xiang-guan-cao-zuo.md)
+    * [创建表](mysql/chuang-jian-biao.md)
 
