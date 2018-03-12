@@ -66,4 +66,10 @@
     * [数据操作](mysql/shu-ju-cao-zuo.md)
     * [数据库相关操作](mysql/shu-ju-ku-xiang-guan-cao-zuo.md)
     * [创建表](mysql/chuang-jian-biao.md)
+    * [CRUD](mysql/crud.md)
+    * [函数](mysql/han-shu.md)
+    * [约束](mysql/yue-shu.md)
+    * [事务](mysql/shi-wu.md)
+    * [表类型和储存引擎](mysql/biao-lei-xing-he-chu-cun-yin-qing.md)
+    * [视图](mysql/shi-tu.md)
 
