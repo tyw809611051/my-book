@@ -54,7 +54,11 @@
     * [伪静态](wei-jing-tai.md)
   * [Python](python.md)
     * [语法](python/yu-fa.md)
-    * 基本数据类型
+    * [基本数据类型](python/ji-ben-shu-ju-lei-xing.md)
+    * [条件控制](python/tiao-jian-kong-zhi.md)
+    * [循环](python/xun-huan.md)
+    * [函数](python/han-shu.md)
+    * [数据结构](python/shu-ju-jie-gou.md)
   * [ReactJS](reactjs.md)
     * [简介](reactjs/jian-jie.md)
     * [安装](reactjs/an-zhuang.md)
