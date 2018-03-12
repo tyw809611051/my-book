@@ -44,17 +44,11 @@ float：对当前
 
 注意：清楚浮动，紧跟浮动的后面的一个空的div来装载
 
-&lt;
 
-div class="clear"
+&lt;div class="clear"&gt;
 
-&gt;
+&lt;/class&gt;
 
-&lt;
-
-/class
-
-&gt;
 
 清楚浮动：把原来浮动后的元素，再设置为原样
 

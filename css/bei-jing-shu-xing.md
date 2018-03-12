@@ -5,9 +5,9 @@
 
 属性：
 
-![](index_files/18834531.png)
+![](/img/Language/CSS/backgroud/18834531.png)
 
-![](index_files/18871203.png)
+![](/img/Language/CSS/backgroud/18871203.png)
 
 ** 左右、上下**
 
@@ -20,9 +20,9 @@
 
 **ex:background:\#fff url\(\) norepeat0 0 fixed; 如果不想加某个值 可不写**
 
-![](index_files/19005078.png)
+![](/img/Language/CSS/backgroud/19005078.png)
 
 背景定位方式：精灵图
 
-![](index_files/c911369e-6aeb-42dd-b233-4d29211837db.png)
+![](/img/Language/CSS/backgroud/c911369e-6aeb-42dd-b233-4d29211837db.png)
 
