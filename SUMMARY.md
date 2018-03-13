@@ -61,6 +61,7 @@
     * [数据结构](python/shu-ju-jie-gou.md)
     * [模块](python/mo-kuai.md)
     * [输入和输出](python/shu-ru-he-shu-chu.md)
+    * [类](python/lei.md)
   * [ReactJS](reactjs.md)
     * [简介](reactjs/jian-jie.md)
     * [安装](reactjs/an-zhuang.md)
