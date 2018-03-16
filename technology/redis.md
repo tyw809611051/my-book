@@ -319,7 +319,7 @@ redis支持数据类型,不是PHP的类型．
 
 原因是，将数组强行转换成字符,结果就是Array.
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image077.jpg)
+![](/img/Technology/nosql/redis/40.png)
 
 
 
@@ -327,17 +327,17 @@ redis支持数据类型,不是PHP的类型．
 
 因为去分不开,是否被序列化了,就全部处理.
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image079.jpg)
+![](/img/Technology/nosql/redis/41.png)
 
 ## 5.2字符串:get,获取
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image081.jpg)
+![](/img/Technology/nosql/redis/42.png)
 
 
 
 ## 5.3字符串:递增,递减, incr, decr, incrby, decrby
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image083.jpg)
+![](/img/Technology/nosql/redis/43.png)
 
 
 
@@ -347,7 +347,7 @@ redis支持数据类型,不是PHP的类型．
 
 类似于memacache的add.
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image085.jpg)
+![](/img/Technology/nosql/redis/44.png)
 
 
 
@@ -363,15 +363,15 @@ redis支持数据类型,不是PHP的类型．
 
 ## 5.5字符串:追加append
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image087.jpg)
+![](/img/Technology/nosql/redis/45.png)
 
 ## 5.6字符串:长度strlen
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image089.jpg)
+![](/img/Technology/nosql/redis/46.png)
 
 ## 5.7缓存项:del, delete,删除
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image091.jpg)
+![](/img/Technology/nosql/redis/47.png)
 
 
 
@@ -387,7 +387,7 @@ redis支持数据类型,不是PHP的类型．
 
 
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image093.jpg)
+![](/img/Technology/nosql/redis/48.png)
 
 
 
@@ -401,7 +401,7 @@ redis支持数据类型,不是PHP的类型．
 
 同时支持获取当前缓存项的有效期, ttl, time to live.
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image095.jpg)
+![](/img/Technology/nosql/redis/49.png)
 
 
 
@@ -417,25 +417,25 @@ redis支持数据类型,不是PHP的类型．
 
 将元素压入list. \(PHP: array\_push\(\), array\_unshift\(\)数组操作函数\)
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image097.jpg)
+![](/img/Technology/nosql/redis/50.png)
 
 
 
 ## 6.2弹出元素: lpop\(\), rpop\(\)
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image099.jpg)
+![](/img/Technology/nosql/redis/51.png)
 
 
 
 ## 6.3索引下标操作: lset, lget
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image101.jpg)
+![](/img/Technology/nosql/redis/52.png)
 
 
 
 强调,下标索引操作,仅仅可以操作已经存在的元素.不能执行添加.但支持一个插入linsert的工作,参考linsert.
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image103.jpg)
+![](/img/Technology/nosql/redis/53.png)
 
 
 
@@ -445,13 +445,13 @@ redis支持数据类型,不是PHP的类型．
 
 常量: Redis::AFTER, Redis::BEFORE表示
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image105.jpg)
+![](/img/Technology/nosql/redis/54.png)
 
 
 
 注意,如果当前参考元素值相同的多个元素,则在第一个元素前执行插入工作
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image107.jpg)
+![](/img/Technology/nosql/redis/55.png)
 
 
 
@@ -461,11 +461,11 @@ range范围.
 
 通过起止的索引值,表示范围. \(总结,表示子范围, 2中方案, a,起,止; b,起,范围\)
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image109.jpg)
+![](/img/Technology/nosql/redis/56.png)
 
 索引位置,可以由负数表示,表示倒数第几个的含义:
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image111.jpg)
+![](/img/Technology/nosql/redis/57.png)
 
 
 
@@ -477,7 +477,7 @@ $list = $redis-&gt;lrange\('userList', 0, -1\);
 
 ## 6.6获取长度: llen, lsize
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image113.jpg)
+![](/img/Technology/nosql/redis/58.png)
 
 
 
@@ -485,19 +485,19 @@ $list = $redis-&gt;lrange\('userList', 0, -1\);
 
 值匹配删除:
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image115.jpg)
+![](/img/Technology/nosql/redis/59.png)
 
 
 
 如果出现重复的值,如何处理?默认删除全部匹配元素
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image117.jpg)
+![](/img/Technology/nosql/redis/60.png)
 
 
 
 删除时,可以去指定,删除固定数量的匹配元素,通过第三个参数数量count来设置:
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image119.jpg)
+![](/img/Technology/nosql/redis/61.png)
 
 
 
@@ -553,19 +553,19 @@ rpush+rpop
 
 加入几个元素:
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image121.jpg)
+![](/img/Technology/nosql/redis/62.png)
 
 
 
 测试加入重复元素:
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image123.jpg)
+![](/img/Technology/nosql/redis/63.png)
 
 
 
 ## 7.2sMembers,获取集合中的全部成员
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image125.jpg)
+![](/img/Technology/nosql/redis/64.png)
 
 
 
@@ -573,23 +573,23 @@ rpush+rpop
 
 随机弹出某个成员.
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image127.jpg)
+![](/img/Technology/nosql/redis/65.png)
 
 
 
 ## 7.4集合基\(基准\)数,成员个数:scard
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image129.jpg)
+![](/img/Technology/nosql/redis/66.png)
 
 
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image131.jpg)
+![](/img/Technology/nosql/redis/67.png)
 
 
 
 ## 7.5删除集合成员: sremove
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image133.jpg)
+![](/img/Technology/nosql/redis/68.png)
 
 
 
@@ -607,7 +607,7 @@ A差B, A中去掉A与B重复的成员.
 
 B差A, B中去掉B与A重复的成员
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image135.jpg)
+![](/img/Technology/nosql/redis/69.png)
 
 
 
@@ -625,7 +625,7 @@ B差A, B中去掉B与A重复的成员
 
 第二个为score,第三个为成员.
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image137.jpg)
+![](/img/Technology/nosql/redis/70.png)
 
 分值,也可以是小数.
 
@@ -637,13 +637,13 @@ zrange升序排序后,获取指定排序的成员,使用起止位置.
 
 第四个参数,表示是否携带分值获取.
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image139.jpg)
+![](/img/Technology/nosql/redis/71.png)
 
 
 
 相对的zrevrange,是降序排序
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image141.jpg)
+![](/img/Technology/nosql/redis/72.png)
 
 
 
@@ -653,15 +653,15 @@ increment
 
 指定增量即可,可以为小数,整数,负数
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image143.jpg)
+![](/img/Technology/nosql/redis/73.png)
 
 
 
 ## 8.4获取成员分值: zscore
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image145.jpg)
+![](/img/Technology/nosql/redis/74.png)
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image147.jpg)
+![](/img/Technology/nosql/redis/75.png)
 
 
 
@@ -671,15 +671,15 @@ increment
 
 需要指定分值范围,闭区间\(包含临界值\)
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image149.jpg)
+![](/img/Technology/nosql/redis/76.png)
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image151.jpg)
+![](/img/Technology/nosql/redis/77.png)
 
 
 
 同样携带分数返回:
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image153.jpg)
+![](/img/Technology/nosql/redis/78.png)
 
 
 
@@ -689,9 +689,9 @@ increment
 
 获取匹配的前2个成员:
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image155.jpg)
+![](/img/Technology/nosql/redis/79.png)
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image157.jpg)
+![](/img/Technology/nosql/redis/80.png)
 
 
 
@@ -749,25 +749,25 @@ zrange\(‘set’, 2, 3\);
 
 ## 9.1设置元素: hset
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image159.jpg)
+![](/img/Technology/nosql/redis/81.png)
 
 
 
 ## 9.2获取全部元素:hgetAll\(\)
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image159.jpg)
+![](/img/Technology/nosql/redis/82.png)
 
 ## 9.3获取一个元素:hget
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image161.jpg)
+![](/img/Technology/nosql/redis/83.png)
 
 ## 9.4删除元素: hdel
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image163.jpg)
+![](/img/Technology/nosql/redis/84.png)
 
 ## 9.5判断元素是否存在: hExists
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image165.jpg)
+![](/img/Technology/nosql/redis/85.png)
 
 ## 9.6长度:hLen
 
@@ -795,7 +795,7 @@ zrange\(‘set’, 2, 3\);
 
 提供: pfadd添加元素, pfCount获取基准数
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image167.jpg)
+![](/img/Technology/nosql/redis/86.png)
 
 
 
@@ -817,9 +817,9 @@ zrange\(‘set’, 2, 3\);
 
 getbit, setbit
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image169.jpg)
+![](/img/Technology/nosql/redis/87.png)
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image171.jpg)
+![](/img/Technology/nosql/redis/88.png)
 
 
 
@@ -833,7 +833,7 @@ getbit, setbit
 
 数据库文件,当redis做持久性存储时,使用的文件. rdb: redis database
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image173.jpg)
+![](/img/Technology/nosql/redis/89.png)
 
 
 
@@ -841,13 +841,13 @@ getbit, setbit
 
 工作目录.默认是./取决于在何处运行reids-server,工作目录就是运行redis-server的目录.建议设置在redis目录.
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image175.jpg)
+![](/img/Technology/nosql/redis/90.png)
 
 
 
 重启redis服务,生效
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image177.jpg)
+![](/img/Technology/nosql/redis/91.png)
 
 
 
@@ -857,13 +857,13 @@ getbit, setbit
 
 增加缓存项后,关闭启动redis-server服务器.
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image179.jpg)
+![](/img/Technology/nosql/redis/92.png)
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image181.jpg)
+![](/img/Technology/nosql/redis/93.png)
 
 通过客户端,直接获取缓存项,发现:
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image183.jpg)
+![](/img/Technology/nosql/redis/94.png)
 
 可以获取到!
 
@@ -875,7 +875,7 @@ redis就将缓存项,存储到了:
 
 dir/dbfilename配置所示
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image185.jpg)
+![](/img/Technology/nosql/redis/95.png)
 
 
 
@@ -887,7 +887,7 @@ dir/dbfilename配置所示
 
 dump.rdb文件,在核实形成的. redis的是采用何种策略进行持久化存储的.
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image187.jpg)
+![](/img/Technology/nosql/redis/96.png)
 
 900s内,如果有1个以上的修改,则存储.
 
@@ -921,7 +921,7 @@ save &lt;seconds&gt;&lt;changes&gt;
 
 当执行save时,将内存中的缓存项,立即持久化到dump.rdb中
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image189.jpg)
+![](/img/Technology/nosql/redis/97.png)
 
 
 
@@ -937,11 +937,11 @@ dump.rdb的文件,称之为快照存储.
 
 因此,通常采用备份dump.rdb的方式,备份redis数据.
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image191.jpg)
+![](/img/Technology/nosql/redis/98.png)
 
 还原时,将备份文件,放在dir/dbfilename指定的位置,重启redis即可欢原数据.
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image193.jpg)
+![](/img/Technology/nosql/redis/99.png)
 
 
 
@@ -971,23 +971,23 @@ append only file
 
 默认是没有开启的.通过配置项: appendonly可以开启
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image195.jpg)
+![](/img/Technology/nosql/redis/100.png)
 
 重启测试
 
 操作设置redis
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image197.jpg)
+![](/img/Technology/nosql/redis/101.png)
 
 查看生成的文件:
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image199.jpg)
+![](/img/Technology/nosql/redis/102.png)
 
 
 
 该文件是修改命令记录文件:
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image201.jpg)
+![](/img/Technology/nosql/redis/103.png)
 
 
 
@@ -1013,7 +1013,7 @@ discard放弃
 
 演示如下
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image203.jpg)
+![](/img/Technology/nosql/redis/104.png)
 
 
 
@@ -1021,7 +1021,7 @@ discard放弃
 
 
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image205.jpg)
+![](/img/Technology/nosql/redis/105.png)
 
 
 
@@ -1033,11 +1033,11 @@ discard放弃
 
 ## 14.1服务器配置一个密码
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image207.jpg)
+![](/img/Technology/nosql/redis/106.png)
 
 重启生效
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image209.jpg)
+![](/img/Technology/nosql/redis/107.png)
 
 
 
@@ -1045,17 +1045,17 @@ discard放弃
 
 ## 14.2客户端提供密码
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image211.jpg)
+![](/img/Technology/nosql/redis/108.png)
 
 
 
 命令auth
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image213.jpg)
+![](/img/Technology/nosql/redis/109.png)
 
 直接操作即可
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image215.jpg)
+![](/img/Technology/nosql/redis/110.png)
 
 PHP程序中,使用
 
@@ -1073,7 +1073,7 @@ $redis-&gt;auth\('foobared'\);
 
 在S\(\)函数初始化缓存配置时,使用redis类型即可
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image217.jpg)
+![](/img/Technology/nosql/redis/111.png)
 
 实操时, PHP代码不需要修改.通常将缓存服务器的配置,定义在配置系统中.
 
@@ -1093,13 +1093,13 @@ $redis-&gt;auth\('foobared'\);
 
 Back/Goods/add
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image219.jpg)
+![](/img/Technology/nosql/redis/112.png)
 
 
 
 ceshi
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image221.jpg)
+![](/img/Technology/nosql/redis/113.png)
 
 
 
@@ -1113,7 +1113,7 @@ ceshi
 
 Home/Goods/view
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image223.jpg)
+![](/img/Technology/nosql/redis/114.png)
 
 
 
@@ -1123,7 +1123,7 @@ Home/Goods/view
 
 看的多就热.
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image225.jpg)
+![](/img/Technology/nosql/redis/115.png)
 
 ### 15.2.4三, \(应用\)计数过滤
 
@@ -1162,7 +1162,7 @@ Home/Goods/view
 
 写个PHP脚本,更新访问次数的脚本
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image227.jpg)
+![](/img/Technology/nosql/redis/116.png)
 
 
 
@@ -1170,9 +1170,9 @@ Home/Goods/view
 
 \(上传脚本到linux\)
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image229.jpg)
+![](/img/Technology/nosql/redis/118.png)
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image231.jpg)
+![](/img/Technology/nosql/redis/119.png)
 
 
 
@@ -1180,7 +1180,7 @@ Home/Goods/view
 
 每天同步一次即可\(每4个小时\)
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image233.jpg)
+![](/img/Technology/nosql/redis/120.png)
 
 
 
