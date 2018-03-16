@@ -1,94 +1,4 @@
-redis-支持持久化的内存缓存
-1    <span id="1">概述<span>                                                                                                                            
-2    安装                                                                                                                            
-2.1    windows                                                                                                             
-2.2    linux                                                                                                                   
-2.3    常规管理                                                                                                            
-2.3.1    windows, 将redis目录, 加入环境变量                                                             
-2.3.2    linux, 设置环境PATH                                                                                     
-2.3.3    开机启动, rc.local                                                                                          
-3    C/S操作                                                                                                                     
-3.1    服务器端                                                                                                          
-3.1.1    开启                                                                                                            
-3.1.2    关闭                                                                                                            
-3.2    必要的配置                                                                                                       
-3.2.1    使用守护进程的方式后台执行                                                                     
-3.2.2    进程PID的文件                                                                                           
-3.2.3    port, 监听的端口                                                                                         
-3.2.4    bind, 监听的IP端口绑定                                                                               
-3.2.5    logfile, 日志文件地址                                                                                   
-3.3    PHP程序客户端                                                                                                 
-3.3.1    windows                                                                                                      
-3.3.2    linux                                                                                                            
-3.4    命令行管理客户端                                                                                            
-4    操作                                                                                                                          
-4.1    连接redis服务器                                                                                                
-5    字符串类型与缓存项操作, 重点, 数据缓存                                                                  
-5.1    字符串:set, 设置                                                                                                
-5.2    字符串:get, 获取                                                                                                
-5.3    字符串: 递增, 递减, incr, decr, incrby, decrby                                                      
-5.4    字符串: setNx, 设置, 不存在时设置                                                                    
-5.5    字符串: 追加append                                                                                           
-5.6    字符串: 长度strlen                                                                                             
-5.7    缓存项:del, delete,删除                                                                                       
-5.8    缓存项: 有效期expire, expireAt, ttl                                                                       
-6    list(链表)结构(类型)的操作                                                                                        
-6.1    压入元素: lpush, rpush                                                                                       
-6.2    弹出元素: lpop(), rpop()                                                                                     
-6.3    索引下标操作: lset, lget                                                                                      
-6.4    指定位置插入元素: linsert                                                                                  
-6.5    获取部分元素:lrange                                                                                          
-6.6    获取长度: llen, lsize                                                                                           
-6.7    移除元素: lremove                                                                                             
-6.8    队列queue操作, 重点                                                                                         
-6.9    栈stack                                                                                                             
-7    集合, set                                                                                                                    
-7.1    sadd, 添加成员到集合中                                                                                    
-7.2    sMembers, 获取集合中的全部成员                                                                     
-7.3    弹出成员: spop                                                                                                  
-7.4    集合基(基准)数, 成员个数:scard                                                                        
-7.5    删除集合成员: sremove                                                                                      
-7.6    集合间运算: 交集                                                                                              
-7.7    集合间运算: 并集                                                                                              
-7.8    集合间运算: 差集                                                                                              
-8    有序集合, 加权(分)集合, sorted-set. 重要                                                                   
-8.1    添加成员到有序集: zadd                                                                                    
-8.2    指定范围成员: zrange, zRevRange                                                                       
-8.3    分值增减: zIncrBy                                                                                             
-8.4    获取成员分值: zscore                                                                                        
-8.5    zRangeByScore, ZRevRangeByScore                                                                    
-8.6    应用                                                                                                                 
-9    哈希表: hash-table                                                                                                    
-9.1    设置元素: hset                                                                                                   
-9.2    获取全部元素:hgetAll()                                                                                      
-9.3    获取一个元素:hget                                                                                             
-9.4    删除元素: hdel                                                                                                  
-9.5    判断元素是否存在: hExists                                                                                
-9.6    长度:hLen                                                                                                          
-10    基准数: HyperLog                                                                                                    
-11    bitmap, 位图字符串                                                                                                 
-12    持久性存储(数据库特征)                                                                                         
-12.1    配置项 dbfilename                                                                                            
-12.2    配置 dir                                                                                                           
-12.3    持久化存储测试                                                                                              
-12.4    配置项save, 持久化时间策略                                                                           
-12.5    命令 save, 立即存储                                                                                        
-12.6    存储的方式策略                                                                                              
-12.7    AOF存储机制                                                                                                  
-13    事务(批处理)                                                                                                           
-14    认证                                                                                                                        
-14.1    服务器配置一个密码                                                                                       
-14.2    客户端提供密码                                                                                              
-15    应用                                                                                                                        
-15.1    数据缓存(redis的字符串类型)                                                                          
-15.2    计数器-排行榜类型程序                                                                                  
-15.2.1    一, 初始化每个商品的访问次数                                                                 
-15.2.2    二, 计数器累加                                                                                          
-15.2.3    三,(应用) 排行版                                                                                       
-15.2.4    三, (应用)计数过滤                                                                                    
-15.2.5    四, 同步到数据库                                                                                      
-15.3    队列应用                                                                                                         
-
+                                                                                                     
 ### 1概述
 
 redis,很流行的内存缓存技术.相对于memcached,有2个应用层面的不同:
@@ -107,27 +17,27 @@ B,支持持久化缓存数据.在服务器重启时,之前的数据还是会存�
 
 ## 2.1windows
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image002.jpg)
+![](/img/Technology/nosql/redis/1.png)
 
 **解压需要的**版本,放置在指定位置即可, \(绿色版\)
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image004.jpg)
+![](/img/Technology/nosql/redis/2.png)
 
 
 
 也是在service/redis
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image006.jpg)
+![](/img/Technology/nosql/redis/3.png)
 
 ## 2.2linux
 
 获取源码
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image008.jpg)
+![](/img/Technology/nosql/redis/4.png)
 
 上传到centos, tar zxvf解压,进入目录
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image010.jpg)
+![](/img/Technology/nosql/redis/5.png)
 
 
 
@@ -135,13 +45,13 @@ B,支持持久化缓存数据.在服务器重启时,之前的数据还是会存�
 
 直接make即可
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image012.jpg)
+![](/img/Technology/nosql/redis/6.png)
 
 make完毕后,生成了可以直接运行的二进制程序
 
 需要将其放置在合理的位置即可.
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image013.jpg)
+![](/img/Technology/nosql/redis/7.png)
 
 
 
@@ -151,13 +61,13 @@ make完毕后,生成了可以直接运行的二进制程序
 
 创建需要的目录即可,参考windows的目录结构,可以规划成其他结构,比如创建bin存储执行程序.
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image015.jpg)
+![](/img/Technology/nosql/redis/8.png)
 
 
 
 将执行文件\(程序\)拷贝到特定目录
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image017.jpg)
+![](/img/Technology/nosql/redis/9.png)
 
 
 
@@ -165,11 +75,11 @@ make完毕后,生成了可以直接运行的二进制程序
 
 在源码根目录
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image019.jpg)
+![](/img/Technology/nosql/redis/10.png)
 
 
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image021.jpg)
+![](/img/Technology/nosql/redis/11.png)
 
 
 
@@ -177,13 +87,13 @@ make完毕后,生成了可以直接运行的二进制程序
 
 ### 2.3.1windows,将redis目录,加入环境变量
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image023.jpg)
+![](/img/Technology/nosql/redis/12.png)
 
 
 
 ### 2.3.2linux,设置环境PATH
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image025.jpg)
+![](/img/Technology/nosql/redis/13.png)
 
 
 
@@ -191,7 +101,7 @@ make完毕后,生成了可以直接运行的二进制程序
 
 ### 2.3.3开机启动, rc.local
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image027.jpg)
+![](/img/Technology/nosql/redis/14.png)
 
 
 
@@ -207,13 +117,13 @@ redis-server
 
 redis-server配置文件
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image029.jpg)
+![](/img/Technology/nosql/redis/15.png)
 
 
 
 可以增加&,后端执行
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image031.jpg)
+![](/img/Technology/nosql/redis/16.png)
 
 
 
@@ -221,35 +131,35 @@ redis-server配置文件
 
 直接运行redis-server
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image033.jpg)
+![](/img/Technology/nosql/redis/17.png)
 
 ### 3.1.2关闭
 
 kill掉.可以用/var/run/redis-6379.pid获取PID值
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image035.jpg)
+![](/img/Technology/nosql/redis/18.png)
 
 ## 3.2必要的配置
 
 ### 3.2.1使用守护进程的方式后台执行
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image037.jpg)
+![](/img/Technology/nosql/redis/19.png)
 
 启动时,不需要增加&,就会自动在后端运行.启动
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image038.jpg)
+![](/img/Technology/nosql/redis/20.png)
 
 
 
 ### 3.2.2进程PID的文件
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image040.jpg)
+![](/img/Technology/nosql/redis/21.png)
 
 redis-server会将redis的运行的PID,存储到该文件中,便于获取该PID,对进程进行管理.例如结束:
 
 通过反引号包裹需要执行的命令,将其作为需要被kill的PID使用.
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image041.jpg)
+![](/img/Technology/nosql/redis/22.png)
 
 
 
@@ -259,19 +169,19 @@ redis-server会将redis的运行的PID,存储到该文件中,便于获取该PID,
 
 6379是redis的默认端口
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image043.jpg)
+![](/img/Technology/nosql/redis/23.png)
 
 
 
 ### 3.2.4bind,监听的IP端口绑定
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image045.jpg)
+![](/img/Technology/nosql/redis/24.png)
 
 一块电脑多个网卡,我们的redis,监听从那块网卡进入的操作请求链接.
 
 为了让宿主电脑也可以访问到,同时监听eth0. \(服务器所在的IP地址\)
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image047.jpg)
+![](/img/Technology/nosql/redis/25.png)
 
 
 
@@ -285,9 +195,9 @@ redis-server会将redis的运行的PID,存储到该文件中,便于获取该PID,
 
 强烈建议,保留日志,通过配置日志文件完成
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image049.jpg)
+![](/img/Technology/nosql/redis/26.png)
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image051.jpg)
+![](/img/Technology/nosql/redis/27.png)
 
 
 
@@ -299,17 +209,17 @@ redis-server会将redis的运行的PID,存储到该文件中,便于获取该PID,
 
 ### 3.3.1windows
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image053.jpg)
+![](/img/Technology/nosql/redis/28.png)
 
 解压,放在php/ext
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image055.jpg)
+![](/img/Technology/nosql/redis/29.png)
 
 
 
 php.ini开启
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image057.jpg)
+![](/img/Technology/nosql/redis/30.png)
 
 
 
@@ -317,7 +227,7 @@ php.ini开启
 
 测试
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image059.jpg)
+![](/img/Technology/nosql/redis/31.png)
 
 
 
@@ -325,7 +235,7 @@ php.ini开启
 
 phpize\(php扩展化\)
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image061.jpg)
+![](/img/Technology/nosql/redis/32.png)
 
 解压,进入源码, phpize,配置,编译,安装
 
@@ -345,13 +255,13 @@ make && make install
 
 修改php.ini
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image063.jpg)
+![](/img/Technology/nosql/redis/33.png)
 
 重启apache
 
 测试
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image065.jpg)
+![](/img/Technology/nosql/redis/34.png)
 
 
 
@@ -361,7 +271,7 @@ make && make install
 
 键入redis-cli进入到命令行的客户端,测试,管理时常用.
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image067.jpg)
+![](/img/Technology/nosql/redis/35.png)
 
 
 
@@ -375,7 +285,7 @@ make && make install
 
 ## 4.1连接redis服务器
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image069.jpg)
+![](/img/Technology/nosql/redis/36.png)
 
 
 
@@ -393,7 +303,7 @@ make && make install
 
 ## 5.1字符串:set,设置
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image071.jpg)
+![](/img/Technology/nosql/redis/37.png)
 
 
 
@@ -401,11 +311,11 @@ redis支持数据类型,不是PHP的类型．
 
 选择，　存储一个数组进入：
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image073.jpg)
+![](/img/Technology/nosql/redis/38.png)
 
 此时，　存储在redis中的仅仅是：Array　字符串
 
-![](file:///C:\Users\ADMINI~1\AppData\Local\Temp\msohtmlclip1\01\clip_image075.jpg)
+![](/img/Technology/nosql/redis/39.png)
 
 原因是，将数组强行转换成字符,结果就是Array.
 
@@ -1278,5 +1188,4 @@ Home/Goods/view
 
 后边说!
 
- �4�.��a
 
