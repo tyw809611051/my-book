@@ -123,5 +123,7 @@
     * [正则表达式](technology/zheng-ze-biao-da-shi.md)
       * 定义
       * [全部符号解释](technology/zheng-ze-biao-da-shi/quan-bu-fu-hao-jie-shi.md)
+  * NoSQL
+    * [Redis](technology/redis.md)
 * Reading
 
