@@ -201,3 +201,131 @@ clearTimeout，清除延迟执行
 ```
 
 ### 事件
+** 7.1 事件介绍**
+Javascript中的事件 和 显示生活中事件，有点类似
+现实生活中，交通事件、政治事件等等，现实生活中发生这些事之后，我们采用相应的处理
+在javascript中，事件指的是用户 和 网页之间发生一些交互的行为、动作（鼠标点击、键盘敲击、手指触摸等），为了用户体验更好，会针对用户的这些行为提供对应处理方案
+
+**7.2  事件分类**
+```
+鼠标事件：用户拿着鼠标和网页进行交互
+- click()  			鼠标单击
+- dblclick()			鼠标双击
+- mouseover() 		鼠标移入事件
+- mouseout()  		鼠标移出事件
+- mousemove()		鼠标移动事件
+- mousedown()		鼠标按下事件
+- mouseup()  		鼠标按键被松开事件
+- scroll           	滚动事件（body）
+
+键盘事件：用户通过键盘的按键和网页进行交互
+- keydown		键盘按下
+- keyup			键盘抬起
+触摸事件：用户拿着手指和网页进行交互（手机网页）
+- touchstart
+- touchmove
+touchend
+表单事件
+- submit		用户提交表单时事件
+- select   	文本框的文本被选中
+- focus		获得焦点事件
+- blur		失去焦点事件
+- change		内容改变事件
+页面加载完毕事件
+- load			页面加载完毕
+```
+
+**7.3	监视事件**
+> 我们要时刻监视某个元素、标签，监视用户的这些行为是否发生，一旦发生了，我们要做相应的处理
+
+- 直接在html标签上，通过on监视
+![](/img/Language/JavaScript/object/77.png)
+
+- 通过javascript监视用户的行为
+![](/img/Language/JavaScript/object/78.png)
+
+- 绑定事件监听器
+![](/img/Language/JavaScript/object/79.png)
+
+- 通过attachEvent给IE8以下的浏览器监视事件
+![](/img/Language/JavaScript/object/80.png)
+
+
+**7.4 事件捕获、事件冒泡**
+当采用事件捕获时，参数3位true的时候，先执行父元素的事件，再执行自己身上的事件
+![](/img/Language/JavaScript/object/81.png)
+
+把参数3设置为false，不捕获，采用事件冒泡（就像水里的水泡一样，从水底冒出来），对于事件来说，就是先执行自己身上的函数，再执行父元素身上的函数
+![](/img/Language/JavaScript/object/82.png)
+
+**7.5	阻止事件冒泡**
+由于我们点击一个元素时，应该是先执行自己身上的事件对应的函数，所以我们通常都是设置为false，外面的元素（父元素身上的事件不应该受影响），所以我们需要设置阻止事件冒泡
+
+主流浏览器是通过事件对象的stopPropogation方法阻止
+IE8及以下版本的浏览器采用事件对象的cancelBubble属性 = true阻止
+
+事件对象怎么获得呢？
+通常当事件（监视的用户的行为）发生时，会自动产生事件对象，并且会自动传递到事件触发的函数中。通过事件对象可以获得事件发生时，事件主体（鼠标、键盘、手指等）在什么位置等等
+![](/img/Language/JavaScript/object/83.png)
+![](/img/Language/JavaScript/object/84.png)
+
+
+**7.6	事件分类演示**
+- dblclick: 鼠标双击事件（连续点击两次鼠标）
+![](/img/Language/JavaScript/object/85.png)
+
+- mouseover鼠标移入,mouseout鼠标移出
+```
+mousemove 	鼠标移动事件
+鼠标移动时，获得鼠标当前的坐标,也是通过事件对象获得
+clientX：距离客户端X轴的距离
+clientY
+pageX：距离页面的位置，包括滚动条卷去的距离
+pageY
+
+mousedown	鼠标按下
+mouseup		鼠标抬起
+
+通过鼠标按下行为，我们可以获得用户是左击、还是右击鼠标
+通过事件对象的button属性获得，如果属性值为0表示左击、2是右击、1按下的是滑轮
+
+```
+![](/img/Language/JavaScript/object/87.png)
+
+scroll：滑轮滚动事件
+说明：由于滑轮滚动时，控制的是body在滚动，所以我们应该监视body
+![](/img/Language/JavaScript/object/88.png)
+
+
+keydown键盘按下
+keyup键盘抬起
+说明：通常我们通过键盘按下、抬起事件，获得用户按下的是哪个键
+因为键盘上的每一个按键，都对应一个ascii码，通过事件对象的keyCode属性获得，再根据按键码做相应的判断
+
+![](/img/Language/JavaScript/object/89.png)
+
+在键盘事件中，除了keyCode属性之外，事件对象还提供了如下3个属性：
+ctrlKey，只有当用户按下ctrl键的时候，该属性的值才为true
+altKey，只有当用户按下alt键的时候，该属性的值才为true
+shiftKey，只有当用户按下shift键的时候，该属性的值才为true
+
+
+解决按下enter键时，默认会自动回车换行，这个回车换行的功能是计算机自带的功能，如何阻止计算机默认的功能呢？
+通过事件对象的preventDefault方法设置
+![](/img/Language/JavaScript/object/90.png)
+
+**表单事件**
+
+submit		监视用户提交表单的行为
+说明：通常在表单提交事件中，使用return true/false 提交或者阻止表单提交
+例如：onsubmit=”return false”表示阻止表单提交
+![](/img/Language/JavaScript/object/91.png)
+
+但是这个地方我们不能固定死，而应该根据判断返回true 或 false
+	我们通常在表单提交事件发生时，验证表单项的内容，如果合法允许提交
+
+
+
+
+
+
