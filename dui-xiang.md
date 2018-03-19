@@ -144,4 +144,60 @@ Dom文档对象模型将html文件里面的标签，转换成javascript的对象
 - 兄弟姐妹关系：nextSibling(弟弟节点)、previousSibling(哥哥节点)
 
 
+### BOM对象
 
+**5.1	BOM对象介绍**
+B:Browser，浏览器
+O: Object，对象
+M: Model，模型
+```
+history，历史记录：前进、后退、刷新（掌握）
+该对象提供了如下方法，操作历史记录：
+go(1)，前进一步
+go(-1)，后退一步
+go(0)，刷新本页面
+forward()	前进一步
+back()		后退一步
+```
+![](/img/Language/JavaScript/object/74.png)
+
+location，地址栏相关：（掌握）
+该对象提供了href属性，该属性指定跳转到哪个url地址中去
+例如：从location.html页面，跳转到百度去
+
+screen，屏幕对象，用来获得屏幕分辨率的宽度、高度（了解）
+width
+height
+availWidth：可用的宽度
+availHeight：可用的高度
+
+
+### window对象
+
+**6.1 window对象介绍**
+window对象，是所有对象的顶层对象，包括DOM、BOM对象等都是window对象的子对象
+![](/img/Language/JavaScript/object/75.png)
+
+Window对象除了以上的子对象之外，还提供了很多常用的方法，例如：
+alert()方法就是window对象的方法
+confirm()方法，确认框
+![](/img/Language/JavaScript/object/76.png)
+
+```
+prompt()，弹出输入框
+
+setInterval()
+计时器（类似于定时炸弹，一旦开启之后，每隔一定的时间执行函数）
+注意：因为每开启一次计时器，就会在内存中运行一次，如果用户点击了多次，我们需要关闭多次，我们通常在开启定时器之前，先将之前的计时器关闭
+
+setTimeout()
+setInterval和setTimeout的区别是什么？
+setInterval是间隔执行，每间隔一定时间就执行函数
+setTimeout是延迟执行，延迟一定时间之后执行一次
+
+clearTimeout，清除延迟执行
+注意：由于延迟执行，是多长时间之后执行一次，删除时也是删除执定的延迟执行
+
+```
+
+### 事件
