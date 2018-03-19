@@ -27,6 +27,8 @@
     * [定位](css/ding-wei.md)
     * [常用的css命名规则](css/chang-yong-de-css-ming-ming-gui-ze.md)
   * JAVASCRIPT
+    * [JS数据类型](jsshu-ju-lei-xing.md)
+    * [对象](dui-xiang.md)
   * [PHP](php.md)
     * [基本语法](basicgrammar.md)
     * [数组](phpjie-shao.md)
