@@ -129,5 +129,7 @@
       * [全部符号解释](technology/zheng-ze-biao-da-shi/quan-bu-fu-hao-jie-shi.md)
   * NoSQL
     * [Redis](technology/redis.md)
+  * [区块链](technology/qu-kuai-lian.md)
+    * [产生原因](technology/qu-kuai-lian/chan-sheng-yuan-yin.md)
 * Reading
 
