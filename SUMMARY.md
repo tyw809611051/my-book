@@ -131,5 +131,6 @@
     * [Redis](technology/redis.md)
   * [区块链](technology/qu-kuai-lian.md)
     * [产生原因](technology/qu-kuai-lian/chan-sheng-yuan-yin.md)
+    * [2](technology/qu-kuai-lian/2.md)
 * Reading
 
