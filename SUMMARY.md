@@ -26,6 +26,7 @@
     * [兼容性](css/jian-rong-xing.md)
     * [定位](css/ding-wei.md)
     * [常用的css命名规则](css/chang-yong-de-css-ming-ming-gui-ze.md)
+    * [CSS3属性](css/css3shu-xing.md)
   * JAVASCRIPT
     * [JS数据类型](jsshu-ju-lei-xing.md)
     * [对象](dui-xiang.md)
