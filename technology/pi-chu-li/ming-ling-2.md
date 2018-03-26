@@ -35,3 +35,32 @@ C:\Users\Administrator\Desktop>a.cmd 1 2 3
 ```
 
 #### SET命令
+> 显示、设置或删除 cmd.exe 环境变量。
+
+**基本用法**
+```
+SET [variable=[string]]
+
+  variable  指定环境变量名。
+  string    指定要指派给变量的一系列字符串。
+```
+
+**示例**
+```
+@echo off 
+set message=Hello World 
+echo %message%
+#结果
+Hello World 
+```
+也可进行表达式设置
+> SET /A expression
+```
+@echo off 
+SET /A a=5 
+SET /A b=10 
+SET /A c=%a% + %b% 
+echo %c%
+#结果
+15
+```
