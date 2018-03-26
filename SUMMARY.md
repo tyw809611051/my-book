@@ -134,5 +134,6 @@
     * [2](technology/qu-kuai-lian/2.md)
   * [批处理](technology/pi-chu-li.md)
     * [概览](technology/pi-chu-li/ming-ling-1.md)
+    * [命令1](technology/pi-chu-li/ming-ling-2.md)
 * Reading
 
