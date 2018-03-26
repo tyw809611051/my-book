@@ -64,3 +64,20 @@ echo %c%
 #结果
 15
 ```
+
+#### 局部、全局和环境变量
+调用SETLOCAL命令，使变量在局部范围之内，变量在ENDLOCAL语句后被销毁
+```
+@echo off 
+set globalvar=5
+SETLOCAL
+set var=13145
+set /A var=%var% + 5
+echo %var%
+echo %globalvar%
+ENDLOCAL
+#结果
+13150
+5
+```
+**如果有跨批处理文件使用的变量，最好使用环境变量**
