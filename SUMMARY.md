@@ -132,6 +132,7 @@
   * [区块链](technology/qu-kuai-lian.md)
     * [产生原因](technology/qu-kuai-lian/chan-sheng-yuan-yin.md)
     * [2](technology/qu-kuai-lian/2.md)
-  * [打包PC端app](technology/da-bao-pc-duan-app.md)
+  * [批处理](technology/pi-chu-li.md)
+    * [概览](technology/pi-chu-li/ming-ling-1.md)
 * Reading
 
