@@ -39,3 +39,15 @@ if exist C:\set3.txt (echo "File exists") else (echo "File does not exist")
 "File exists"
 "File does not exist"
 ```
+
+**嵌套多个if语句**
+```
+所以只有当条件1和条件2都满足时，才会执行do_something块中的代码。
+if(condition1) if (condition2) do_something
+```
+
+**if errorlevel**
+```
+if errorlevel n somecommand
+用于测试运行的最后一个命令的退出代码。 各种命令发出整数退出代码来表示命令的状态。 通常，如果命令成功完成，则命令通过传递0;如果命令失败，命令通过传递1
+```
