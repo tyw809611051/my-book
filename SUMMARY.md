@@ -136,5 +136,6 @@
     * [概览](technology/pi-chu-li/ming-ling-1.md)
     * [命令1](technology/pi-chu-li/ming-ling-2.md)
     * [命令2](technology/pi-chu-li/ming-ling-4.md)
+    * [命令3](technology/pi-chu-li/ming-ling-3.md)
 * Reading
 
