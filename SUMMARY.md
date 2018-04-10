@@ -151,5 +151,6 @@
   * [ES](technology/es.md)
     * [简介](technology/es/jian-jie.md)
     * [配置文件](technology/es/pei-zhi-wen-jian.md)
+    * 索引构建示例
 * Reading
 
