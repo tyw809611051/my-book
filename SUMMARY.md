@@ -154,5 +154,6 @@
     * 索引构建示例
     * [分析器之tokenizer](technology/es/fen-xi-qi-zhi-tokenizer.md)
     * [分析器之token filter](technology/es/fen-xi-qi-zhi-token-filter.md)
+    * [分析器之char filter](technology/es/fen-xi-qi-zhi-char-filter.md)
 * Reading
 
