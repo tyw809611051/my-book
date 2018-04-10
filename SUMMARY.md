@@ -150,5 +150,6 @@
     * [nginx配置](technology/qi-ta/nginxpei-zhi.md)
   * [ES](technology/es.md)
     * [简介](technology/es/jian-jie.md)
+    * [配置文件](technology/es/pei-zhi-wen-jian.md)
 * Reading
 
