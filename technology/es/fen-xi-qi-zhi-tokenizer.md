@@ -1,9 +1,11 @@
 **1.standard**
+
 |设置|描述|
 |----|----|
 |max\_token\_length|最大的标记长度。如果一个令牌被超过这个长度再分割max\_token\_length间隔.默认值为二百五十五|
 
 **2.edgeNGram**
+
 |设置|描述|默认值|
 |---|---|---|
 |min_gram|在一个单一的N-gram的码点的最小尺寸|1|
@@ -31,11 +33,13 @@
 同edgengram
 
 **7.pattern**
+
 |设置|描述|
-|--|--|
+|---|---|
 |pattern|正则表达式模式，默认为\W+|
 |flags|正则表达式的旗帜|
 |group|提取到令牌的组。默认值为-1（分裂）|
+
 ```
 pattern = '([^']+)'
 group   = 0
@@ -43,10 +47,13 @@ input   = aaa 'bbb' 'ccc'
 ```
 
 **8.uax_url_email**
+
 |设置|描述|
+|---|---|
 |max\_token\_length|最大的标记长度。如果一个令牌被超过这个长度然后丢弃。默认值为255|
 
 **9.Path Hierarchy**
+
 |设置|描述|
 |--|--|
 |delimiter|人物使用的分隔符，默认为/|
