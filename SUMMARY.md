@@ -152,5 +152,6 @@
     * [简介](technology/es/jian-jie.md)
     * [配置文件](technology/es/pei-zhi-wen-jian.md)
     * 索引构建示例
+    * [分析器之tokenizer](technology/es/fen-xi-qi-zhi-tokenizer.md)
 * Reading
 
