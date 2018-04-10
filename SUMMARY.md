@@ -153,5 +153,6 @@
     * [配置文件](technology/es/pei-zhi-wen-jian.md)
     * 索引构建示例
     * [分析器之tokenizer](technology/es/fen-xi-qi-zhi-tokenizer.md)
+    * [分析器之token filter](technology/es/fen-xi-qi-zhi-token-filter.md)
 * Reading
 
