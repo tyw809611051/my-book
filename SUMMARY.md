@@ -148,5 +148,7 @@
   * [其他](technology/qi-ta.md)
     * [Windows将bat/exe文件加入系统服务](technology/qi-ta/windowsjiang-bat-exe-wen-jian-jia-ru-xi-tong-fu-wu.md)
     * [nginx配置](technology/qi-ta/nginxpei-zhi.md)
+  * [ES](technology/es.md)
+    * [简介](technology/es/jian-jie.md)
 * Reading
 
