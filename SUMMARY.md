@@ -158,5 +158,6 @@
     * [分析器之analyzer](technology/es/fen-xi-qi-zhi-analyzer.md)
     * [5.x版本mapping](technology/es/5xban-ben-mapping.md)
     * [查询](technology/es/cha-xun.md)
+    * [搜索不常用的参数](technology/es/sou-suo-bu-chang-yong-de-can-shu.md)
 * Reading
 
