@@ -157,5 +157,6 @@
     * [分析器之char filter](technology/es/fen-xi-qi-zhi-char-filter.md)
     * [分析器之analyzer](technology/es/fen-xi-qi-zhi-analyzer.md)
     * [5.x版本mapping](technology/es/5xban-ben-mapping.md)
+    * [查询](technology/es/cha-xun.md)
 * Reading
 
