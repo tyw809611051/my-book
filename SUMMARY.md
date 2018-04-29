@@ -97,6 +97,7 @@
     * [BUG描述与处理指南](ce-shi/bugchu-li-zhi-nan.md)
     * [测试流程](ce-shi/ce-shi-liu-cheng.md)
   * [编码规范](bian-ma-gui-fan.md)
+  * [公众号](gong-zhong-hao.md)
 * [Technology](technology.md)
   * [机器学习](technology/ji-qi-xue-xi.md)
     * [安装](technology/ji-qi-xue-xi/an-zhuang.md)
